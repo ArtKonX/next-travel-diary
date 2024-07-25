@@ -1,0 +1,30 @@
+.header-logo {
+
+    &__link {
+        text-decoration: none;
+
+        .logo-text {
+            font-size: 35px;
+            display: flex;
+            flex-direction: column;
+            color: #dd610d;
+            line-height: 40px;
+
+            &_color {
+               color: azure;
+               border-top: 3px solid rgb(230, 230, 47);
+               transition: 1.5s;
+               font-size: 35px;
+            }
+        }
+    }
+}
+
+.logo-text:hover .logo-text_color {
+    color: yellow;
+    text-shadow: 0 0 10px #ecf403,
+        0 0 25px #ecf403,
+        0 0 50px #ecf403,
+        0 0 100px #ecf403;
+    transition: 1.5s;
+}

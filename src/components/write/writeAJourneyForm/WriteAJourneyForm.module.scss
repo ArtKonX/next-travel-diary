@@ -1,0 +1,210 @@
+.form {
+    background-color: rgba(9, 87, 189, 0.283);
+    border-radius: 12px;
+    padding: 30px;
+
+    .label-title {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    &__input-block {
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .input {
+            min-width: 100%;
+            height: 40px;
+            background-color: rgba(9, 87, 189, 0.157);
+            border-radius: 8px;
+            border: none;
+            padding: 9px;
+            font-size: 17px;
+            box-sizing: border-box;
+            transition: 1.5s;
+            color: rgb(240, 255, 255);
+
+            &::placeholder {
+                color: rgb(240, 255, 255);
+                transition: 1.5s;
+                font-size: 17px;
+
+                &:focus {
+                    color: azure;
+                    transition: 1.5s;
+                }
+
+                &:hover {
+                    color: azure;
+                    transition: 1.5s;
+                }
+            }
+
+            &:focus {
+                background-color: rgba(9, 87, 189, 0.283);
+                transition: 1.5s;
+                border: none;
+                outline: none;
+            }
+
+            &:hover {
+                background-color: rgba(9, 87, 189, 0.283);
+                transition: 1.5s;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    &__price-input-block {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+
+
+        .input {
+            max-width: 300px;
+            margin-left: 20px;
+            height: 40px;
+            background-color: rgba(9, 87, 189, 0.157);
+            border-radius: 8px;
+            border: none;
+            padding: 9px;
+            font-size: 17px;
+            box-sizing: border-box;
+            transition: 1.5s;
+            color: rgb(240, 255, 255);
+
+            &::placeholder {
+                color: rgb(240, 255, 255);
+                transition: 1.5s;
+                font-size: 17px;
+
+                &:focus {
+                    color: azure;
+                    transition: 1.5s;
+                }
+
+                &:hover {
+                    color: azure;
+                    transition: 1.5s;
+                }
+            }
+
+            &:focus {
+                background-color: rgba(9, 87, 189, 0.283);
+                transition: 1.5s;
+                border: none;
+                outline: none;
+            }
+
+            &:hover {
+                background-color: rgba(9, 87, 189, 0.283);
+                transition: 1.5s;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    &__textarea-block {
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .textarea {
+            min-width: 100%;
+            background-color: rgba(9, 87, 189, 0.157);
+            border-radius: 8px;
+            border: none;
+            padding: 9px;
+            font-size: 17px;
+            box-sizing: border-box;
+            transition: 1.5s;
+            color: rgb(240, 255, 255);
+            min-height: 200px;
+            font-weight: 300;
+
+            &:focus {
+                background-color: rgba(9, 87, 189, 0.283);
+                transition: 1.5s;
+                border: none;
+                outline: none;
+            }
+
+            &:hover {
+                background-color: rgba(9, 87, 189, 0.283);
+                transition: 1.5s;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    &__btn-submit {
+        padding: 13px;
+        background-color: rgba(9, 87, 189, 0.157);
+        border: 1px solid azure;
+        font-size: 17px;
+        color: azure;
+        border-radius: 8px;
+        transition: 1.5s;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(9, 87, 189, 0.283);
+            border: 1px solid rgba(9, 87, 189, 0.242);
+            transition: 1.5s;
+            color: azure;
+        }
+    }
+
+    .file-upload {
+        padding: 13px;
+        background-color: rgba(9, 87, 189, 0.157);
+        border: 1px solid azure;
+        font-size: 17px;
+        color: azure;
+        border-radius: 8px;
+        transition: 1.5s;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        display: flex;
+        max-width: 560px;
+
+        &:hover {
+            background-color: rgba(9, 87, 189, 0.283);
+            border: 1px solid rgba(9, 87, 189, 0.242);
+            transition: 1.5s;
+            color: azure;
+        }
+
+
+        &__input[type="file"] {
+            visibility: hidden;
+        }
+    }
+
+    .list-files {
+        background-color: rgba(9, 87, 189, 0.157);
+        font-size: 17px;
+        color: azure;
+        border-radius: 8px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        display: flex;
+        max-width: 560px;
+        list-style: none;
+        flex-direction: column;
+
+        .file-elem {
+            padding: 13px;
+        }
+    }
+}

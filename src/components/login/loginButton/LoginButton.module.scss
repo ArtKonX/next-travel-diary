@@ -1,0 +1,23 @@
+.btn-singin-block {
+    display: flex;
+    justify-content: end;
+
+    .btn-singin-block__btn {
+        padding: 13px;
+        background-color: rgba(9, 87, 189, 0.283);
+        border: 1px solid azure;
+        font-size: 17px;
+        color: azure;
+        border-radius: 8px;
+        transition: 1.5s;
+        margin-bottom: 15px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(9, 87, 189, 0.7);
+            border: 1px solid rgba(9, 87, 189, 0.242);
+            transition: 1.5s;
+            color: azure;
+        }
+    }
+}

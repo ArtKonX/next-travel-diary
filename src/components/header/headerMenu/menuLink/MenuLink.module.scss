@@ -1,0 +1,28 @@
+.menu__link {
+    text-decoration: none;
+    display: flex;
+    margin-right: 30px;
+    color: azure;
+    font-size: 22px;
+    display: inline;
+    transition: 1.5s;
+    padding: 6px;
+
+    &:hover {
+        border-radius: 5px;
+        background-color: #dd610d;
+        transition: 1.5s;
+        color: azure;
+    }
+}
+
+.menu__link_active {
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 4px;
+    margin-right: 30px;
+    background-color: #dd610d;
+    color: azure;
+    font-size: 22px;
+    transition: 1.5s;
+}

@@ -1,0 +1,26 @@
+.about-us-container {
+
+    display: flex;
+    justify-content: center;
+    background-color: rgba(9, 87, 189, 0.283);
+    padding: 100px;
+    border-radius: 8px;
+
+    .logo {
+
+        .logo-text {
+            font-size: 4rem;
+            display: flex;
+            flex-direction: column;
+            color: #dd610d;
+            line-height: 70px;
+
+            &_color {
+                color: azure;
+                border-top: 3px solid rgb(230, 230, 47);
+                transition: 1.5s;
+
+            }
+        }
+    }
+}

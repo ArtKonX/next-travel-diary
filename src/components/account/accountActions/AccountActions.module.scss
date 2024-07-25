@@ -1,0 +1,46 @@
+.account-actions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__btn-signout {
+        padding: 13px;
+        background-color: rgba(9, 87, 189, 0.283);
+        border: 1px solid azure;
+        font-size: 17px;
+        color: azure;
+        border-radius: 8px;
+        transition: 1.5s;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+
+        &:hover {
+            background-color: rgba(9, 87, 189, 0.7);
+            border: 1px solid rgba(9, 87, 189, 0.242);
+            transition: 1.5s;
+            color: azure;
+        }
+    }
+
+    &__link-homepage {
+        padding: 13px;
+        background-color: rgba(9, 87, 189, 0.283);
+        border: 1px solid azure;
+        font-size: 17px;
+        color: azure;
+        border-radius: 8px;
+        transition: 1.5s;
+        margin-top: 15px;
+        margin-bottom: 10px;
+
+        &:hover {
+            background-color: rgba(9, 87, 189, 0.7);
+            border: 1px solid rgba(9, 87, 189, 0.242);
+            transition: 1.5s;
+            color: azure;
+        }
+    }
+
+}
