@@ -10,20 +10,6 @@ import { getJourneysData } from '@/utils/apiUtils/apiRequests';
 
 import IJourney from '@/interfaces/journey.interface';
 
-export async function getStaticPaths() {
-    const response = await getJourneysData();
-    const posts = response.data;
-
-    const paths = posts.map((post: IJourney) => ({
-        params: { slug: post._id.toString() },
-    }));
-
-    return {
-        paths,
-        fallback: false,
-    };
-}
-
 type Params = {
     slug: string
 }
