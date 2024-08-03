@@ -115,7 +115,7 @@ export const WriteAJourneyForm = () => {
 
                 <div className={styles['file-upload-block']}>
                     <label className={styles['file-upload']}>
-                        Загрузить изображения<input className={styles['file-upload__input']} type="file" multiple onChange={handleImageUpload} />
+                        Загрузить изображения<input className={styles['file-upload__input']} accept="image/png, image/gif, image/jpeg" type="file" multiple onChange={handleImageUpload} />
                     </label>
                     <label className={styles['label-title']}>Список файлов:</label>
                     <ul className={styles['list-files']}>
