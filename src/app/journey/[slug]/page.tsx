@@ -20,7 +20,7 @@ export default function JourneyPage({ params }: {
 
     const [journeys, setJourneys] = useState<IJourney[]>([]);
 
-    const journeyOnly = journeys.find((post: IJourney) => post._id.toString() === params.slug);
+    const journeyOnly = journeys.find((journey: IJourney) => journey._id.toString() === params.slug);
 
     useEffect(() => {
         const getJourneys = async () => setJourneys(await getJourneysData())

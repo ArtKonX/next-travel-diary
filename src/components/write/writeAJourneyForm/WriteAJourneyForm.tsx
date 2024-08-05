@@ -16,7 +16,7 @@ export const WriteAJourneyForm = () => {
 
     const [files, setFiles] = useState<File[]>([]);
 
-    const [price, setPrice] = useState('');
+    const [price, setPrice] = useState(0);
 
 
     const router = useRouter();
@@ -75,7 +75,7 @@ export const WriteAJourneyForm = () => {
                 setImageData([]);
 
                 if (response.status === 200) {
-                    router.replace('/home');
+                    router.push('/home');
                     console.log('Journey created');
 
                 }
@@ -110,7 +110,7 @@ export const WriteAJourneyForm = () => {
                 </div>
                 <div className={styles['form__price-input-block']}>
                     <label className={styles['label-title']}>Стоимость путешествия:</label>
-                    <input ref={titleRef} className={`${roboto.className} ${styles.input}`} type="text" value={price} onChange={(e) => setPrice(e.target.value)} />
+                    <input ref={titleRef} className={`${roboto.className} ${styles.input}`} type="number" value={price} onChange={(e) => setPrice(Number(e.target.value))} />
                 </div>
 
                 <div className={styles['file-upload-block']}>

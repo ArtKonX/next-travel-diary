@@ -7,7 +7,7 @@ import { NextRequest } from "next/server";
 export const config = {
     api: {
         bodyParser: {
-            sizeLimit: '50mb',
+            sizeLimit: '150mb',
         },
     },
 };
