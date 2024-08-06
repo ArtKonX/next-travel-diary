@@ -70,14 +70,13 @@ const RegisterForm = () => {
                         label="Имя"
                         id="name"
                         placeholder="Имя..."
-                        register={register('name', { required: 'Name is required' })}
+                        register={register('name')}
                     />
                     <InputBlock
                         label="Электронная почта"
                         id="email"
                         placeholder="Электронная почта..."
                         register={register('email', {
-                            required: 'Email is required',
                             pattern: {
                                 value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
                                 message: 'Email is invalid',
@@ -88,14 +87,13 @@ const RegisterForm = () => {
                         label="Пароль"
                         id="password"
                         placeholder="Пароль..."
-                        register={register('password', { required: 'Password is required' })}
+                        register={register('password')}
                     />
                     <InputBlock
                         label="Подтвердите пароль"
                         id="confirmPassword"
                         placeholder="Повторите пароль..."
                         register={register('confirmPassword', {
-                            required: 'Confirm Password is required',
                             validate: (value) => {
                                 const { password } = getValues();
                                 return password === value || 'Passwords should match!';

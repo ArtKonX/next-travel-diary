@@ -13,7 +13,7 @@ const InputBlock = ({
     placeholder,
     register
 }: InputBlockType) => {
-    
+
     return (
         <div className={styles['input-block']}>
             <label className={styles['input-block__label']} htmlFor={id}>
@@ -24,6 +24,7 @@ const InputBlock = ({
                 className={styles['input-block__input']}
                 id={id}
                 placeholder={placeholder}
+                required
                 {...register}
             />
         </div>
